@@ -17,6 +17,7 @@ Sus componentes fundamentales: 🍲️
 | **Clave primaria**  | Identifica de forma única cada fila                         |
 | **Clave foránea**   | Relaciona una fila con otra tabla (relaciones entre datos)  |
 | **Índice**          | Acelera la búsqueda y orden de datos                        |
+
 Principios clave de las bases de datos:
 
 1. Integridad de datos: evita errores, duplicaciones o incoherencias.
