@@ -8,11 +8,28 @@ Desde la terminal se deberá ingresar:
 
 `go get github.com/jackc/pgx/v5
 `
+
 Antes de darle uso a la librería o importarla al código en `Go` se debe generar un módulo en la carpeta del proyecto, luego agregar el main.go y así podremos importar la librería.
 
+
+Pensemos que tenemos una base de datos ya iniciada y queremos trabajar sobre una tabla llamada "empleados":
+
+```sql
+
+CREATE TABLE empleados (
+    id SERIAL PRIMARY KEY,
+    nombre TEXT NOT NULL,
+    edad INT,
+    salario NUMERIC
+);
+
+
+```
 
 ***
 
 ## Lo básico de PGX
 
-Tomemos en cuenta que tiene que haberse creado la base de datos y tabla de forma previa, desde go y ya instalada la librería
+Tomemos en cuenta que tiene que haberse creado la base de datos y tabla de forma previa, desde go y ya que hayamos importado la librería podremos hacer uso de elementos y funciones básicas de `pgx`:
+
+
