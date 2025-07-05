@@ -51,7 +51,7 @@ Ya instalado, a mi me resultó mucho más cómodo iniciar mis tablas y bases de 
 
 Aquí es importante resaltar que una base de datos no es directamente lo que guarda los datos, para eso hay que crear las tablas:
 
-```psql
+```sql
 
 CREATE TABLE empleados (
 
