@@ -22,8 +22,6 @@ CREATE TABLE empleados (
     edad INT,
     salario NUMERIC
 );
-
-
 ```
 
 ***
@@ -32,4 +30,10 @@ CREATE TABLE empleados (
 
 Tomemos en cuenta que tiene que haberse creado la base de datos y tabla de forma previa, desde go y ya que hayamos importado la librería podremos hacer uso de elementos y funciones básicas de `pgx`:
 
+| Función / Elemento     | Descripción                        | Ejemplo usando `empleados`                                          |
+| ---------------------- | ---------------------------------- | ------------------------------------------------------------------- |
+| `pgx.Connect`          | Conexión directa                   | `pgx.Connect(ctx, "postgres://user:pass@localhost/plantilla")`      |
+| `QueryRow`             | Consulta que retorna una sola fila | `conn.QueryRow(ctx, "SELECT nombre FROM empleados WHERE id=$1", 1)` |
+| `Scan`                 | Leer el resultado de una fila      | `.Scan(&nombre)`                                                    |
+| `context.Background()` | Contexto base para operaciones     | `ctx := context.Background()`                                       |
 
